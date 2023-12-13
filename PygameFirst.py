@@ -49,15 +49,16 @@ while not done:
 
     # --- Screen-clearing code goes here
 
-    # Here, we clear the screen to white. Don't put other drawing commands
+    # Here, we clear the screen to black. Don't put other drawing commands
     # above this, or they will be erased with this command.
-
     # If you want a background image, replace this clear with blit'ing the
     # background image.
     screen.fill(BLACK)
 
     # --- Drawing code should go here
     pygame.draw.rect(screen, WHITE, [rect_x, rect_y, 50, 50])
+
+    # --- Move the rect left or right based on rect_change_x and rect_change_y
 
     # --- Go ahead and update the screen with what we've drawn.
     pygame.display.flip()
